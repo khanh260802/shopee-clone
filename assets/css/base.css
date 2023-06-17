@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #fb5533; 
+}
+
+/* animation */
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        
+    } to { 
+        opacity: 1;
+    }
+}
+
+@keyframes growth{
+    from {
+        opacity: 0;
+        transform:  scale(var(--grow-from));
+    } to { 
+        opacity: 1;
+        transform:  scale(var(--grow-to));
+    }
+}
+
+.modal-wrap { 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    display: flex;
+    animation: fadeIn linear .25s;
+    display: none;
+}
+.modal-overlay { 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-body { 
+    --grow-from: 0.7; 
+    --grow-to: 1; 
+    margin: auto;
+    z-index: 1;
+    animation: growth linear .2s;
+}
+
+
+.auth-form { 
+    min-height: 300px;
+    width: 600px; 
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.btn { 
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 32px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+    color: #fff; 
+}
+
+.btn--primary:hover { 
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
