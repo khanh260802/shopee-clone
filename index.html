@@ -54,16 +54,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header-nav__item reset-hover">
+                        <div class="header-nav__item header-nav__item-social reset-hover">
                             Kết nối
-                            <a href="" class="header-nav__link"> <i class="ti-facebook social-icon"></i> </a>
-                            <a href="" class="header-nav__link"> <i class="ti-instagram  social-icon"></i> </a>
+                            <a href="" class="header-nav__link"> <i class="fa-brands fa-facebook fa-lg"></i> </a>
+                            <a href="" class="header-nav__link"> <i class="fa-brands fa-instagram fa-lg"></i> </a>
                         </div>
                     </div>
                     <div class="header-nav__list">
                         <div class="header-nav__item header-nav__item--notify reset-hover">
                             <a href="" class="header-nav__link">
-                                <i class="ti-bell icon-bell"></i>
+                                <i class="fa-regular fa-bell fa-lg"></i>
                                 Thông báo
                             </a>
 
@@ -92,7 +92,7 @@
 
                                     <div class="header-notify__item">
                                         <a href="" class="header-notify__link">
-                                            <img src="./assets/img/BCS.jpg" alt="" class="header-notify__image">
+                                            <img src="./assets/img/hellokitty.jpg" alt="" class="header-notify__image">
                                             <div class="header-notify__content">
                                                 <h4 class="header-notify__title">
                                                     Xác nhận đã thanh toán
@@ -120,25 +120,44 @@
                         </div>
                         <div class="header-nav__item">
                             <a href="" class="header-nav__link">
-                                <i class="ti-help-alt icon-help"></i>
+                                <i class="fa-regular fa-circle-question fa-lg"></i>
                                 Hỗ trợ
                             </a>
                         </div>
                         <div class="header-nav__item language-option reset-hover">
                             <a>
-                                <i class="ti-world"></i>
+                                <i class="fas fa-globe fa-lg"></i>
                                 Tiếng việt
                             </a>
-                            <i class="ti-angle-down"></i>
+                            <i class="fas fa-chevron-down"></i>
                             <div class="header-nav__language-option">
                                 <div class="language-item"> Tiếng Việt </div>
                                 <div class="language-item"> EngLish </div>
                             </div>
                         </div>
 
-                        <div class="header-nav__item pipe"> <a href="" class="header-nav__link">Đăng ký</a>
+                        <!-- <div class="header-nav__item pipe"> 
+                            <a href="" class="header-nav__link">Đăng ký</a>
                         </div>
-                        <div class="header-nav__item"> <a href="" class="header-nav__link">Đăng nhập</a> </div>
+                        <div class="header-nav__item"> 
+                            <a href="" class="header-nav__link">Đăng nhập</a> 
+                        </div> -->
+                        <div class="header-nav__item header-nav__item-user reset-hover">
+                            <img src="./assets/img/user.jpg" alt="" class="header-nav__item-user-img">
+                            <span class="header-nav__item-user-name"> Khánh Nguyễn</span>
+
+                            <ul class="header-nav__item-menu">
+                                <li class="header-nav__item-menu-item"><a href="" class="header-nav__item-menu-link">Tài
+                                        khoản của tôi</a></li>
+                                <li class="header-nav__item-menu-item"><a href="" class="header-nav__item-menu-link">Địa
+                                        chỉ của tôi</a></li>
+                                <li class="header-nav__item-menu-item"><a href="" class="header-nav__item-menu-link">Đơn
+                                        mua</a></li>
+                                <li class="header-nav__item-menu-item"><a href=""
+                                        class="header-nav__item-menu-link">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
@@ -146,7 +165,7 @@
 
                 <div class="header-body">
                     <div class="header__logo">
-                        <a href="" class="header__logo-link">
+                        <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-icon">
                                 <g fill-rule="evenodd">
                                     <path
@@ -207,10 +226,89 @@
                             <i class="fa-solid fa-cart-shopping header__cart-icon"></i>
                             <span class="header__cart-number"> 36 </span>
                         </a>
-                        <div class="header__cart-list header__cart-item--empty">
-                            <div class="header__cart-item header__cart-item--empty ">
+                        <div class="header__cart-list">
+                            <div class="header__cart-item--empty">
                                 <img src="./assets/img/no-cart.png" alt="">
                                 <p> Chưa có sản phẩm </p>
+                            </div>
+
+                            <h4 class="header__cart-header">Sản phẩm đã thêm</h4>
+                            <div class="header__cart-list-item">
+                                <div class="header__cart-item">
+                                    <img src="./assets/img/ban.jpg" alt="" class="header__cart-item-img">
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-header">
+                                            <h4 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h4>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price"> 2.070.000đ </span>
+                                                <span class="mutiply-signal">x</span>
+                                                <span class="header__cart-item-quantity"> 3 </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <p class="header__cart-item-classify"> Phân loại hàng: Bạc </p>
+                                            <div class="header__cart-item-remove"> Xoá </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cart-item">
+                                    <img src="./assets/img/mayGiat.jpg" alt="" class="header__cart-item-img">
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-header">
+                                            <h4 class="header__cart-item-name">Máy giặt đặc trị vùng mắt</h4>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price"> 5.070.000đ </span>
+                                                <span class="mutiply-signal">x</span>
+                                                <span class="header__cart-item-quantity"> 1 </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <p class="header__cart-item-classify"> Phân loại hàng: Vàng </p>
+                                            <div class="header__cart-item-remove"> Xoá </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cart-item">
+                                    <img src="./assets/img/BCS.jpg" alt="" class="header__cart-item-img">
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-header">
+                                            <h4 class="header__cart-item-name">BCS kem đặc trị vùng mắt</h4>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price"> 70.000đ </span>
+                                                <span class="mutiply-signal">x</span>
+                                                <span class="header__cart-item-quantity"> 5 </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <p class="header__cart-item-classify"> Phân loại hàng: Bạc </p>
+                                            <div class="header__cart-item-remove"> Xoá </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__cart-item">
+                                    <img src="./assets/img/hellokitty.jpg" alt="" class="header__cart-item-img">
+                                    <div class="header__cart-item-content">
+                                        <div class="header__cart-item-header">
+                                            <h4 class="header__cart-item-name">Gấu bông mèo Hello Kitty váy</h4>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price"> 100.000đ </span>
+                                                <span class="mutiply-signal">x</span>
+                                                <span class="header__cart-item-quantity"> 3 </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <p class="header__cart-item-classify"> Phân loại hàng: Bạc </p>
+                                            <div class="header__cart-item-remove"> Xoá </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__cart-footer">
+                                <a href="" class="header__cart-view-cart btn btn--primary"> Xem giỏ hàng </a>
                             </div>
                         </div>
                     </div>
@@ -223,6 +321,32 @@
             <div class="footer">
 
             </div>
+        </div>
+
+        <div class="container-wrap">
+
+            <div class="grid wide">
+                <div class="container row">
+                    <div class="sidebar-left col l-2">
+                        <div class="category">
+                            <div class="category__header">
+                                <i class="fa-solid fa-list-ul"></i>
+                                <span>Danh mục</span>
+                                <ul class="category__list">
+                                    <li class="category__item category__item--active">Sản phẩm</li>
+                                    <li class="category__item">Thảm trải sàn</li>
+                                    <li class="category__item">Thẻm ghép</li>
+                                    <li class="category__item">Thảm lau chân</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-10">
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="modal-wrap">

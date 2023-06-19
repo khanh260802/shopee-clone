@@ -10,6 +10,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    font-size: 1.6rem;
+}
+
 :root {
     --primary-color: #fb5533; 
 }
