@@ -1,0 +1,7 @@
+{
+    "explorer.excludeGitIgnore": false,
+    "html.format.indentHandlebars": false,
+    "html.format.templating": false,
+    "html.format.indentInnerHtml": false,
+    "prettier.tabWidth": 4
+}

@@ -96,6 +96,36 @@ body {
 }
 
 
+.pagination {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item {
+    margin: 0 16px;
+}
+
+.pagination-item-active .pagination-item-link {
+    background-color: var(--primary-color);
+    color: #fff; 
+    border-radius: 2px;
+}
+
+.pagination-item-link:hover  {
+    opacity: 0.8;
+}
+
+.pagination-item-link {
+    display: block;
+    text-decoration: none;
+    color: #939393; 
+    font-size: 2.1rem;
+    line-height: 30px;
+    padding: 0 14px; 
+    font-weight: 400;
+}
 
 
 
