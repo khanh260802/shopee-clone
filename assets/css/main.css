@@ -126,24 +126,24 @@
 }
 
 .header-nav__item--notify:hover .header-notify{
-    display: block;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header-notify {
-    --grow-from: 0; 
-    --grow-to: 1; 
     background-color: #fff;
     position: absolute;
     top: 100%; 
     left: -360px;
     border: solid 1px #ddd;
     border-radius: 2px;
-    z-index: 2;
     transform-origin: calc(100% - 34px) -10px;
-    animation: growth ease-in .25s;
-    will-change: opacity, trasnform;
     box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    z-index: 2;
+    will-change: opacity, trasnform;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform ease-in .2s, opacity ease-in .2s;
 }
 
 .header-notify::before {
@@ -229,12 +229,11 @@
 }
 
 .header-nav__item.language-option:hover .header-nav__language-option{
-    display: block;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header-nav__language-option {
-    --grow-from: 0; 
-    --grow-to: 1; 
     position: absolute;
     background-color: #fff;
     color: #000; 
@@ -244,11 +243,12 @@
     padding-left: 10px;
     border-radius: 2px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    animation: growth ease-in .2s;
-    display: none;
     transform-origin: 150px -10px;
     z-index: 1;
     font-size: 1.4rem;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform ease-in .25s, opacity ease-in .25s;
 }
 
 .header-nav__language-option::before {
@@ -294,7 +294,8 @@
 }
 
 .header-nav__item-user:hover .header-nav__item-menu {
-    display: block;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header-nav__item-menu {
@@ -307,11 +308,11 @@
     width: 150px;
     border-radius: 2px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-    display: none;
-    animation: growth ease-in .25s;
-    --grow-from: 0;
-    --grow-to: 1;
+
     transform-origin: calc(100% - 48px) -12px;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform ease-in .2s, opacity ease-in .2s;
 }
 
 .header-nav__item-menu::before { 
@@ -565,7 +566,8 @@
 }
 
 .header__cart:hover .header__cart-list {
-    display: block;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .header__cart-link {
@@ -573,8 +575,6 @@
 }
 
 .header__cart-list {
-    --grow-from: 0;
-    --grow-to: 1;
     position: absolute;
     background-color: #fff; 
     border-radius: 4px;
@@ -584,10 +584,11 @@
     box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.2);
     color: #000; 
     font-size: 1.6rem;
-    animation: growth ease-in .25s;
     transform-origin: calc(100% + -26px) -16px;
-    display: none;
-    z-index: 1;     
+    z-index: 1;  
+    transform: scale(0);
+    opacity: 0;
+    transition: transform ease-in .2s, opacity ease-in .2s;   
 }   
 
 .header__cart-list::before{
