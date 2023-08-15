@@ -54,6 +54,10 @@
     .category-mobile {
         display: block;
     }   
+
+    .footer-license-countrys {
+        display: none;
+    }
 }
 
 /* tablet */
@@ -139,11 +143,13 @@
         display: block;
     }
 
-    .home-product__price--old { 
-        font-size: 1.2rem; 
+    .home-product__price { 
+        font-size: 1.3rem; 
     }
 
-    
+    .home-product__sold-quantity-wrap {
+        display: none;
+    }
 
     .pagination-item { 
         margin: 0; 
@@ -154,9 +160,7 @@
     }
 
 
-    .footer-license-countrys {
-        display: none;
-    }
+    
 
     .footer-footer { 
         justify-content: space-around;
