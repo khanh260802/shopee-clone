@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="./assets/img/icon_favicon_1_96.png" type='image/x-icon'>
 </head>
 
@@ -21,7 +22,7 @@
     <div class="app">
         <div class="header-wrap">
             <div class="header grid wide">
-                <div class="header-nav">
+                <div class="header-nav hide-on-tablet-mobile">
                     <div class="header-nav__list">
                         <div class="header-nav__item pipe"> <a href="#" class="header-nav__link">Kênh người
                                 bán</a> </div>
@@ -160,9 +161,19 @@
                     </div>
                 </div>
 
-
-
                 <div class="header-body">
+
+                    <!-- fixing -->
+                    <div class="header__search-mobile">
+                        <label for="input__show-category">
+                            <i class="fa-solid fa-bars fa-xl category__icon"></i>
+                        </label>
+                        <label for="header__search-checkbox">
+                            <i class="fa-solid fa-magnifying-glass fa-xl header__search-mobile-icon"></i>
+                        </label>
+
+                    </div>
+
                     <div class="header__logo">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-icon">
@@ -174,7 +185,11 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search">
+
+                    <input type="checkbox" class="header__search-checkbox" id="header__search-checkbox" hidden>
+
+
+                    <div class="header__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Tìm trong shop này">
 
@@ -405,34 +420,70 @@
 
                 </div>
             </div>
-            <div class="content">
 
-            </div>
-            <div class="header-footer">
+            <div class="header-sort-list">
+                <div class="header-sort-item">
+                    <a href="" class="header-sort-link">Liên quan</a>
+                </div>
+
+                <div class="header-sort-item header-sort-item--active">
+                    <a href="" class="header-sort-link">Mới nhất</a>
+                </div>
+
+                <div class="header-sort-item">
+                    <a href="" class="header-sort-link">Bán chạy</a>
+                </div>
+
+                <div class="header-sort-item">
+                    <a href="" class="header-sort-link">Giá <i class="ti-arrows-vertical"></i></a>
+                    
+                </div>
+
             </div>
         </div>
 
         <div class="container-wrap">
             <div class="grid wide">
                 <div class="container row">
-                    <div class="sidebar-left col l-2">
+
+                    <input type="checkbox" id="input__show-category" hidden>
+                    <div class="overflow-hidden"></div>
+                    <div class="sidebar-left col l-2 m-0">
                         <div class="category">
                             <div class="category__header">
                                 <i class="fa-solid fa-list-ul fa-sm category__list-icon"></i>
                                 <span>Danh mục</span>
                             </div>
                             <ul class="category__list">
-                                <li class="category__item category__item--active"><a href="#"
-                                        class="category__item-link">Sản phẩm</a></li>
-                                <li class="category__item"><a href="#" class="category__item-link">Thảm trải sàn</a></li>
-                                <li class="category__item"><a href="#" class="category__item-link">Thẻm ghép</a></li>
-                                <li class="category__item"><a href="#" class="category__item-link">Thảm lau chân</a></li>
+                                <li class="category__item category__item--active"><a href="#" class="category__item-link">Sản phẩm</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Điện thoại & Phụ kiện</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Máy tính bảng</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Pin dự phòng</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Ốp lưng, bao da</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Bảo vệ màn hình</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Đế giữ điện thoại</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Thẻ nhớ</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Laptop</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Tai nghe</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Keyboard</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Máy tính bảng</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Pin dự phòng</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Ốp lưng, bao da</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Bảo vệ màn hình</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Đế giữ điện thoại</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Thẻ nhớ</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Laptop</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Tai nghe</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Keyboard</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Thẻ nhớ</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Laptop</a></li>
+                                <li class="category__item"><a href="#" class="category__item-link">Tai nghe</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <ul class="col l-10">
-                        <div class="home-filter">
+                    <ul class="col l-10 m-12">
+                        <div class="home-filter hide-on-tablet-mobile">
                             <div class="home-filter__left">
                                 <div class="home-filter__label">Sắp xếp theo</div>
                                 <div class="btn btn--primary home-filter__btn">Phổ biến</div>
@@ -470,8 +521,31 @@
 
                         <div class="home-product">
                             <div class="grid">
+                                <div class="category-mobile">
+                                    <div class="category-mobile__list">
+                                        <div class="category-mobile__item">
+                                            <a src="#" class="category-mobile__link">Thiết bị điện gia dụng Thiết bị điện gia dụng Thiết bị điện gia dụng </a>
+                                        </div>
+                                        <div class="category-mobile__item">
+                                            <a src="#" class="category-mobile__link">Thiết bị điện gia dụng</a>
+                                        </div>
+                                        <div class="category-mobile__item">
+                                            <a src="#" class="category-mobile__link">Thiết bị điện gia dụng</a>
+                                        </div>
+                                        <div class="category-mobile__item">
+                                            <a src="#" class="category-mobile__link">Thiết bị điện gia dụng</a>
+                                        </div>
+                                        <div class="category-mobile__item">
+                                            <a src="#" class="category-mobile__link">Thiết bị điện gia dụng</a>
+                                        </div>
+                                        <div class="category-mobile__item">
+                                            <a src="#" class="category-mobile__link">Thiết bị điện gia dụng</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="row">
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/iphone14promax.jpg" alt=""
@@ -544,7 +618,7 @@
 
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/taiNghe.jpg" alt="" class="home-product__image">
@@ -615,7 +689,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/sacNhanh.jpg" alt="" class="home-product__image">
@@ -685,7 +759,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/iphone14promax.jpg" alt=""
@@ -758,7 +832,7 @@
 
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/taiNghe.jpg" alt="" class="home-product__image">
@@ -829,7 +903,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/sacNhanh.jpg" alt="" class="home-product__image">
@@ -898,7 +972,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/iphone14promax.jpg" alt=""
@@ -971,7 +1045,7 @@
 
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-4 c-6">
                                         <a href="#" class="home-product__item">
                                             <div class="home-product__header">
                                                 <img src="./assets/img/taiNghe.jpg" alt="" class="home-product__image">
@@ -1093,7 +1167,7 @@
         <div class="footer-wrap">
             <div class="grid wide">
                 <div class="footer row">  
-                    <div class="col l-2-4"> 
+                    <div class="col l-2-4 m-4 c-6"> 
                         <h4 class="footer-header"> CHĂM SÓC KHÁCH HÀNG </h4>
                         <ul class="footer-list">
                             <li class="footer-item"><a href="#" class="footer-item-link">Trung Tâm Trợ Giúp</a></li>
@@ -1109,7 +1183,7 @@
                             <li class="footer-item"><a href="#" class="footer-item-link">Chính Sách Bảo Hành</a></li>
                         </ul>
                     </div>
-                    <div class="col l-2-4"> 
+                    <div class="col l-2-4 m-4 c-6"> 
                         <h4 class="footer-header"> VỀ SHOPEE </h4>
                         <ul class="footer-list">
                             <li class="footer-item"><a href="#" class="footer-item-link">Giới Thiệu Về Shopee Việt Nam</a></li>
@@ -1123,7 +1197,7 @@
                             <li class="footer-item"><a href="#" class="footer-item-link">Liên Hệ Với Truyền Thông</a></li>
                         </ul>
                     </div>
-                    <div class="col l-2-4"> 
+                    <div class="col l-2-4 m-4 c-12"> 
                         <div class="">
                             <h4 class="footer-header"> THANH TOÁN </h4>
                             <div class="footer-list-img">
@@ -1155,7 +1229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-2-4"> 
+                    <div class="col l-2-4 m-4 c-6"> 
                         <h4 class="footer-header"> THEO DÕI CHÚNG TÔI TRÊN </h4>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1179,7 +1253,7 @@
                             
                         </ul>
                     </div>
-                    <div class="col l-2-4"> 
+                    <div class="col l-2-4 m-4 c-6"> 
                         <h4 class="footer-header"> TẢI ỨNG DỤNG SHOPEE NGAY THÔI </h4>
                         <a href="#" class="footer-link">
                             <div class="footer-img-wrap">
@@ -1290,6 +1364,24 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        // <div class="overflow-hidden"></div>
+        //             <div class="sidebar-left col l-2 m-0">
+
+        var overflowHidden = document.querySelector('.overflow-hidden'); 
+        var showCategory = document.querySelector('.category__icon'); 
+        var sidebarLeft  = document.querySelector('.sidebar-left');  
+        overflowHidden.onclick = function() { 
+            this.style.display = sidebarLeft.style.display = 'none'; 
+        }    
+        showCategory.onclick = function() {
+            overflowHidden.style.display = 'block'; 
+            sidebarLeft.style.display = 'block'; 
+        }
+
+    </script>
 </body>
 
 </html>
